@@ -51,5 +51,7 @@ For development and testing, this repo includes a full React/Express stack in th
 ```bash
 npm run dev  # Start development server
 ```
+## Status
+✅ Live sites deployed and operational
 
 The production site uses static HTML/CSS/JS files for optimal performance and hosting compatibility.
