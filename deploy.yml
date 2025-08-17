@@ -27,11 +27,14 @@ jobs:
       - name: Build site
         run: |
           mkdir -p _site
+          ls -la
           cp index.html _site/index.html
-          cp contact.php _site/contact.php
+          cp contact.php _site/contact.php  
           cp robots.txt _site/robots.txt
           cp sitemap.xml _site/sitemap.xml
-          echo "" > _site/.nojekyll
+          touch _site/.nojekyll
+          echo "Build completed, files in _site:"
+          ls -la _site/
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
