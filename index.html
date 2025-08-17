@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Business Website in Days - from $325 | Plundi</title>
-    <!-- Updated for GitHub Pages deployment -->
-    <meta name="description" content="Get your professional business website in days, not weeks. Starting from $325 with no prepayment required. 30 days free tweaks included.">
-    
-    <!-- Open Graph / Facebook -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Professional Website Design from $325 | Plundi - Web Design Agency</title>
+    <meta name="description" content="Get your business website in 2-4 days from $325. Pay only after approval. We use advanced technology and market analysis to build high-performing websites.">
+    <link rel="canonical" href="https://plundi.com/">
+
+    <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Professional Website Design from $325 | Plundi - Web Design Agency">
+    <meta property="og:description" content="Get your business website in 2-4 days from $325. Pay only after approval. We use advanced technology and market analysis to build high-performing websites.">
     <meta property="og:url" content="https://plundi.com/">
-    <meta property="og:title" content="Professional Business Website in Days - from $325 | Plundi">
-    <meta property="og:description" content="Get your professional business website in days, not weeks. Starting from $325 with no prepayment required. 30 days free tweaks included.">
-    <meta property="og:image" content="https://plundi.com/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://plundi.com/">
-    <meta property="twitter:title" content="Professional Business Website in Days - from $325 | Plundi">
-    <meta property="twitter:description" content="Get your professional business website in days, not weeks. Starting from $325 with no prepayment required. 30 days free tweaks included.">
-    <meta property="twitter:image" content="https://plundi.com/og-image.jpg">
-    
-    <!-- Canonical Link -->
+    <meta property="og:site_name" content="Plundi">
+    <meta property="og:image" content="https://plundi.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Professional Website Design from $325 - Plundi Web Design Agency">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Website Design from $325 | Plundi - Web Design Agency">
+    <meta name="twitter:description" content="Get your business website in 2-4 days from $325. Pay only after approval. We use advanced technology and market analysis to build high-performing websites.">
+    <meta property="twitter:image" content="https://plundi.com/og-image.png">
+    <meta name="twitter:site" content="@PlundiDesign">
+
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://plundi.com/">
     
-    <!-- Fonts -->
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#B30000">
+    <meta name="msapplication-TileColor" content="#B30000">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Plundi">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+    
+    <!-- Performance & PWA -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://ipapi.co">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD2R6TKPWT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QD2R6TKPWT', {
+        page_title: document.title,
+        page_location: window.location.href
+      });
+    </script>
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
@@ -281,31 +316,25 @@
         .contact-content {
             max-width: 600px;
             margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-form {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 2rem;
         }
 
         .form-group {
-            display: grid;
-            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .form-group label {
-            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
             color: var(--text-primary);
-            text-align: left;
         }
 
         .form-group input,
         .form-group textarea {
-            padding: 1rem;
-            border: 2px solid var(--border-color);
-            border-radius: 8px;
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid var(--border-color);
+            font-family: inherit;
             font-size: 1rem;
             transition: border-color 0.3s ease;
         }
@@ -317,40 +346,267 @@
         }
 
         .form-group textarea {
+            height: 120px;
             resize: vertical;
-            min-height: 120px;
         }
 
-        /* Portfolio */
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+            background-color: var(--bg-secondary);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .rating-score {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--garnet-primary);
+        }
+
+        .stars {
+            font-size: 2rem;
+            color: #fbbf24;
+        }
+
+        .rating-text {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--garnet-primary);
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-header h4 {
+            color: var(--garnet-primary);
+            font-weight: 600;
+        }
+
+        .testimonial-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-source {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Process */
+        .process {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--garnet-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            color: var(--garnet-primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--garnet-light);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #D1D5DB;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1rem;
+            text-align: center;
+            color: #9CA3AF;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                margin-right: 1rem;
+                padding: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .pricing-card.featured:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Portfolio Section */
         .portfolio {
             padding: 5rem 0;
-            background: var(--bg-secondary);
+            background: var(--bg-primary);
         }
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
             margin-top: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .portfolio-item {
+        .portfolio-card {
             background: white;
-            border-radius: 12px;
+            border: 1px solid var(--border-color);
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .portfolio-item:hover {
+        .portfolio-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
         .portfolio-image {
-            width: 100%;
+            position: relative;
             height: 250px;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(179, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            background: white;
+            color: var(--garnet-primary);
+        }
+
+        .portfolio-link.coming-soon {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            cursor: default;
         }
 
         .portfolio-content {
@@ -363,126 +619,114 @@
             color: var(--garnet-primary);
         }
 
-        .portfolio-meta {
+        .portfolio-type {
             color: var(--text-secondary);
             font-size: 0.9rem;
+            font-weight: 500;
             margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .portfolio-tags {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .portfolio-tag {
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 5rem 0;
-            background: white;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .testimonial-card {
-            background: var(--bg-secondary);
-            padding: 2.5rem;
-            border-radius: 12px;
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: """;
-            font-size: 4rem;
-            color: var(--garnet-primary);
-            position: absolute;
-            top: 1rem;
-            left: 2rem;
-            line-height: 1;
-        }
-
-        .testimonial-content {
-            margin-top: 2rem;
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            color: var(--text-primary);
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--garnet-primary);
-        }
-
-        .testimonial-position {
+        .portfolio-content p {
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .portfolio-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .portfolio-features span {
+            background: var(--bg-secondary);
+            color: var(--garnet-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
         }
 
         /* Pricing */
         .pricing {
             padding: 5rem 0;
-            background: var(--bg-secondary);
+            background-color: var(--bg-secondary);
         }
 
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-bottom: 3rem;
         }
 
         .pricing-card {
             background: white;
-            padding: 3rem 2rem;
+            padding: 2.5rem;
             border-radius: 12px;
             text-align: center;
-            position: relative;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
         }
 
         .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: var(--garnet-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(179, 0, 0, 0.1);
         }
 
         .pricing-card.featured {
-            border: 3px solid var(--garnet-primary);
+            border-color: var(--garnet-primary);
+            position: relative;
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--garnet-primary);
+            color: white;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
 
         .pricing-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-bottom: 1rem;
             color: var(--garnet-primary);
         }
 
-        .pricing-price {
+        .price {
             font-size: 3rem;
             font-weight: 700;
             color: var(--garnet-primary);
             margin-bottom: 1rem;
         }
 
-        .pricing-description {
+        .pricing-card .description {
+            font-size: 1.1rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
         }
 
+        .pricing-card .includes {
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
         .pricing-features {
             list-style: none;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
         }
 
         .pricing-features li {
@@ -499,8 +743,7 @@
             font-weight: bold;
         }
 
-        .pricing-cta {
-            display: block;
+        .btn-pricing {
             background: var(--garnet-primary);
             color: white;
             padding: 1rem 2rem;
@@ -508,224 +751,80 @@
             border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
-            margin-top: auto;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1rem;
+            width: 100%;
         }
 
-        .pricing-cta:hover {
+        .btn-pricing:hover {
             background: var(--garnet-dark);
             transform: translateY(-2px);
         }
 
-        /* FAQ */
-        .faq {
-            padding: 5rem 0;
-            background: white;
-        }
-
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid var(--border-color);
-            padding: 2rem 0;
-        }
-
-        .faq-question {
-            font-size: 1.25rem;
-            font-weight: 600;
+        .btn-pricing.secondary {
+            background: transparent;
             color: var(--garnet-primary);
-            margin-bottom: 1rem;
+            border: 2px solid var(--garnet-primary);
         }
 
-        .faq-answer {
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        /* Additional Services */
-        .additional-services {
-            padding: 5rem 0;
-            background: var(--bg-secondary);
-        }
-
-        .additional-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .additional-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .additional-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .additional-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            color: var(--garnet-primary);
-        }
-
-        .additional-price {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--garnet-primary);
-            margin-bottom: 1rem;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--text-primary);
-            color: white;
-            padding: 3rem 0 1rem;
-            text-align: center;
-        }
-
-        .footer-content {
-            margin-bottom: 2rem;
-        }
-
-        .footer-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--garnet-primary);
-            margin-bottom: 1rem;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--garnet-primary);
-        }
-
-        .footer-contact {
-            margin: 2rem 0;
-        }
-
-        .footer-contact p {
-            margin: 0.5rem 0;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #374151;
-            padding-top: 1rem;
-            color: #9CA3AF;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .pricing-grid,
-            .services-grid,
-            .portfolio-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-        }
-
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Sticky CTA */
-        .sticky-cta {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
+        .btn-pricing.secondary:hover {
             background: var(--garnet-primary);
             color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 4px 20px rgba(179, 0, 0, 0.3);
-            transition: all 0.3s ease;
         }
 
-        .sticky-cta:hover {
-            background: var(--garnet-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(179, 0, 0, 0.4);
+        /* Mobile CTA */
+        .mobile-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--garnet-primary);
+            padding: 1rem;
+            z-index: 999;
+            display: none;
+        }
+
+        .mobile-cta a {
+            display: block;
+            background: white;
+            color: var(--garnet-primary);
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
         }
 
         @media (max-width: 768px) {
-            .sticky-cta {
-                bottom: 10px;
-                right: 10px;
-                padding: 0.75rem 1.25rem;
-                font-size: 0.9rem;
+            .mobile-cta {
+                display: block;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Sticky CTA -->
-    <a href="mailto:info@plundi.com?subject=Get%20Started%20Today" class="sticky-cta">Get Started $325</a>
-
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="#" class="logo">Plundi</a>
-                <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav container">
+            <a href="#" class="logo">Plundi</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
-            <h1>Your Professional Business Website in Days – from <span class="highlight">$325</span></h1>
-            <p class="tagline">
-                <strong>No prepayment • Pay only after you approve • 30 days free tweaks • Yours to keep, forever.</strong>
-            </p>
-            
+            <h1>Your Professional Business Website in Days – <span class="highlight">from $325</span></h1>
+            <p class="tagline"><strong>No prepayment • Pay only after you approve • 30 days free tweaks • Yours to keep, forever.</strong></p>
             <div class="cta-buttons">
                 <a href="mailto:info@plundi.com?subject=Get%20Started%20Today" class="btn-primary">Get Started Today</a>
                 <a href="#services" class="btn-secondary">See what's included</a>
@@ -733,7 +832,46 @@
         </div>
     </section>
 
-    <!-- What's Included Section -->
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Plundi?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💲</div>
+                    <h3>Clear pricing</h3>
+                    <p>No hidden fees, no surprises.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast delivery</h3>
+                    <p>Most sites delivered in 2–4 business days.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Lifetime partnership</h3>
+                    <p>We provide updates, hosting, and support as long as you need us.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>No upfront payments</h3>
+                    <p>Pay only when you approve your site.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Data-driven design</h3>
+                    <p>Free website audit and competitor analysis to create a site that converts visitors into customers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>No Lock-In Guarantee</h3>
+                    <p>Your website is 100% yours. You can leave anytime and take your site and code with you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">What's Included in Your Website</h2>
@@ -748,7 +886,6 @@
                         <li>Fast loading speeds</li>
                     </ul>
                 </div>
-                
                 <div class="service-card">
                     <h3>Essential Pages</h3>
                     <p>All the key pages your business needs to establish credibility and convert visitors.</p>
@@ -760,7 +897,6 @@
                         <li>Professional testimonials</li>
                     </ul>
                 </div>
-                
                 <div class="service-card">
                     <h3>Technical Setup</h3>
                     <p>Complete technical foundation to ensure your website works perfectly from day one.</p>
@@ -780,108 +916,113 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Recent Projects</h2>
-            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">
-                See examples of websites we've built for businesses like yours
-            </p>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.125rem;">See examples of websites we've built for businesses like yours</p>
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Hotel Bergen Website" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>Hotel Bergen</h3>
-                            <a href="https://hotelbergen.de/" target="_blank" style="color: var(--garnet-primary); text-decoration: none; font-weight: 600;">View Live Site →</a>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://luxurysuites.ee/assets/IMG_2611_1754836672891.jpeg" alt="Luxury Suites Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://luxurysuites.ee/" target="_blank" rel="noopener noreferrer" class="portfolio-link">View Live Site</a>
                         </div>
-                        <p class="portfolio-meta">Hospitality & Tourism</p>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Luxury Suites</h3>
+                        <p class="portfolio-type">Hospitality & Tourism</p>
+                        <p>Elegant luxury accommodation website with sophisticated booking system, multilingual support, and premium visual presentation. Built to showcase high-end accommodations and drive direct bookings.</p>
+                        <div class="portfolio-features">
+                            <span>Premium Design</span>
+                            <span>Booking System</span>
+                            <span>Multilingual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://rikashotels.com/attached_assets/IMG_1944_1754762300106.jpeg" alt="Rikas Hotels Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://rikashotels.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link">View Live Site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Rikas Hotels</h3>
+                        <p class="portfolio-type">Hotel Chain Management</p>
+                        <p>Comprehensive hotel chain website with advanced booking functionality, property management integration, and seamless user experience across multiple locations.</p>
+                        <div class="portfolio-features">
+                            <span>Multi-Property</span>
+                            <span>Advanced Booking</span>
+                            <span>Management Tools</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Hotel Bergen Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://hotelbergen.de" target="_blank" rel="noopener noreferrer" class="portfolio-link">View Live Site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Hotel Bergen</h3>
+                        <p class="portfolio-type">Hospitality & Tourism</p>
                         <p>Professional hotel website with booking integration, multilingual support, and stunning visual presentation. Built to showcase luxury accommodations and drive direct bookings.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Responsive Design</span>
-                            <span class="portfolio-tag">Booking System</span>
-                            <span class="portfolio-tag">Multilingual</span>
+                        <div class="portfolio-features">
+                            <span>Responsive Design</span>
+                            <span>Booking System</span>
+                            <span>Multilingual</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Restaurant Zur Post Website" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>Restaurant Zur Post</h3>
-                            <a href="https://restaurant-zurpost.de/" target="_blank" style="color: var(--garnet-primary); text-decoration: none; font-weight: 600;">View Live Site →</a>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Restaurant Zur Post Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://restaurant-zurpost.de" target="_blank" rel="noopener noreferrer" class="portfolio-link">View Live Site</a>
                         </div>
-                        <p class="portfolio-meta">Restaurant & Dining</p>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Restaurant Zur Post</h3>
+                        <p class="portfolio-type">Restaurant & Dining</p>
                         <p>Elegant restaurant website featuring menu showcase, reservation system, and authentic dining atmosphere. Designed to attract food lovers and increase table bookings.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Menu Display</span>
-                            <span class="portfolio-tag">Reservations</span>
-                            <span class="portfolio-tag">Location Info</span>
+                        <div class="portfolio-features">
+                            <span>Menu Display</span>
+                            <span>Reservations</span>
+                            <span>Location Info</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Luxury Suites Website" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>Luxury Suites</h3>
-                            <span style="color: var(--text-secondary); font-weight: 600;">Coming Soon</span>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" alt="Hotel Bern Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://www.hotelbern.ee/" target="_blank" rel="noopener noreferrer" class="portfolio-link">View Live Site</a>
                         </div>
-                        <p class="portfolio-meta">Luxury Accommodation</p>
-                        <p>Premium suite booking website with virtual tours, concierge services, and seamless reservation management. Designed for high-end hospitality experiences.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Virtual Tours</span>
-                            <span class="portfolio-tag">Luxury Design</span>
-                            <span class="portfolio-tag">Concierge</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Hotel Bern</h3>
+                        <p class="portfolio-type">Boutique Hotel</p>
+                        <p>Boutique hotel website with elegant design, seamless booking experience, and local attraction integration. Perfect for travelers seeking authentic experiences.</p>
+                        <div class="portfolio-features">
+                            <span>Boutique Design</span>
+                            <span>Local Integration</span>
+                            <span>Experience Focus</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Rikas Hotels Website" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>Rikas Hotels</h3>
-                            <span style="color: var(--text-secondary); font-weight: 600;">In Development</span>
-                        </div>
-                        <p class="portfolio-meta">Hotel Chain Management</p>
-                        <p>Comprehensive hotel chain website with centralized booking, loyalty programs, and brand management. Built for multi-property hospitality businesses.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Multi-Property</span>
-                            <span class="portfolio-tag">Loyalty Program</span>
-                            <span class="portfolio-tag">Brand Management</span>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Business Website Example" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-link coming-soon">Coming Soon</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Business Website Example" class="portfolio-image">
                     <div class="portfolio-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>Your Business Could Be Next</h3>
-                            <span style="color: var(--text-secondary); font-weight: 600;">Coming Soon</span>
-                        </div>
-                        <p class="portfolio-meta">Professional Services</p>
+                        <h3>Your Business Could Be Next</h3>
+                        <p class="portfolio-type">Professional Services</p>
                         <p>We create custom websites for businesses across all industries. From consulting firms to retail stores, we deliver professional results that drive growth.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Custom Design</span>
-                            <span class="portfolio-tag">SEO Optimized</span>
-                            <span class="portfolio-tag">Fast Loading</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="E-commerce Website" class="portfolio-image">
-                    <div class="portfolio-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>E-commerce Solutions</h3>
-                            <span style="color: var(--text-secondary); font-weight: 600;">Available</span>
-                        </div>
-                        <p class="portfolio-meta">Online Retail</p>
-                        <p>Complete e-commerce websites with payment processing, inventory management, and customer accounts. Perfect for businesses ready to sell online.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Payment Processing</span>
-                            <span class="portfolio-tag">Inventory</span>
-                            <span class="portfolio-tag">Customer Accounts</span>
+                        <div class="portfolio-features">
+                            <span>Custom Design</span>
+                            <span>SEO Optimized</span>
+                            <span>Fast Loading</span>
                         </div>
                     </div>
                 </div>
@@ -893,29 +1034,67 @@
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-header">
+                <div class="rating">
+                    <span class="rating-score">5</span>
+                    <div class="stars">★★★★★</div>
+                    <span class="rating-text">(over 45 reviews)</span>
+                </div>
+            </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "Plundi delivered exactly what they promised - a professional website in just 5 days. The design perfectly captures our brand, and we've already seen increased inquiries from potential clients. No hassles, no surprises, just quality work."
+                    <div class="testimonial-header">
+                        <h4>Sarah Mitchell</h4>
+                        <span class="testimonial-date">2 months ago</span>
                     </div>
-                    <div class="testimonial-author">Sarah Mitchell</div>
-                    <div class="testimonial-position">CEO, Mitchell Consulting</div>
+                    <p>"Plundi delivered quickly and exactly as promised. Our new website was ready in less than 24 hours and looks fantastic."</p>
+                    <div class="testimonial-source">Google Review</div>
                 </div>
-                
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "I was skeptical about the 'no prepayment' promise, but Plundi proved their confidence in their work. The website exceeded our expectations, and the 30-day revision period was perfect for fine-tuning everything to our liking."
+                    <div class="testimonial-header">
+                        <h4>Marcus Weber</h4>
+                        <span class="testimonial-date">3 months ago</span>
                     </div>
-                    <div class="testimonial-author">Marcus Weber</div>
-                    <div class="testimonial-position">Owner, Weber Architecture</div>
+                    <p>"Clear price, fast turnaround, and friendly support. No hidden costs, just professional service from start to finish."</p>
+                    <div class="testimonial-source">Google Review</div>
                 </div>
-                
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "As a small business owner, I appreciated the transparent pricing and no-contract approach. The team was responsive, professional, and delivered a website that truly represents our restaurant's atmosphere and quality."
+                    <div class="testimonial-header">
+                        <h4>Elena Kowalski</h4>
+                        <span class="testimonial-date">1 month ago</span>
                     </div>
-                    <div class="testimonial-author">Elena Kowalski</div>
-                    <div class="testimonial-position">Manager, Kowalski's Bistro</div>
+                    <p>"Amazing work! They redesigned our old website and made it mobile-friendly. The whole process was smooth and professional."</p>
+                    <div class="testimonial-source">Google Review</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.125rem;">Clear scope, predictable timeline, zero risk.</p>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Free Website Audit</h3>
+                    <p>We review your current site (or your idea) and provide a detailed improvement plan.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Design & Build</h3>
+                    <p>We create your site using the latest tech, tailored to your brand.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>SEO & Market Targeting</h3>
+                    <p>We optimize for Google and your exact audience.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Launch & Handover</h3>
+                    <p>Your site is yours. No lock-in. No ongoing obligations unless you want our support.</p>
                 </div>
             </div>
         </div>
@@ -924,138 +1103,120 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <h2 class="section-title">Packages & Pricing</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.125rem;">We keep our pricing simple and transparent. No hidden fees, no confusing hourly rates.</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>Starter</h3>
-                    <div class="pricing-price">$325</div>
-                    <p class="pricing-description">Perfect for small businesses getting started online</p>
+                    <div class="price">$325</div>
+                    <p class="description">Perfect for small businesses, freelancers, and startups.</p>
                     <ul class="pricing-features">
-                        <li>5-page professional website</li>
-                        <li>Mobile-responsive design</li>
-                        <li>Contact form setup</li>
-                        <li>Basic SEO optimization</li>
-                        <li>SSL certificate included</li>
-                        <li>30 days free revisions</li>
-                        <li><strong>No Lock-In Guarantee</strong></li>
+                        <li>Up to 5 pages (Home, About, Services, Contact, Privacy)</li>
+                        <li>Unique, mobile-friendly design</li>
+                        <li>Basic SEO setup (meta tags, speed optimisation)</li>
+                        <li>Contact form integration</li>
+                        <li>1 round of free changes after delivery</li>
+                        <li>Delivered in 2–4 business days</li>
                     </ul>
-                    <a href="mailto:info@plundi.com?subject=Start%20my%20$325%20Starter%20website" class="pricing-cta">Get Started</a>
+                    <a href="mailto:info@plundi.com?subject=Start%20my%20$325%20Starter%20website" class="btn-pricing">Get Started</a>
                 </div>
-                
                 <div class="pricing-card featured">
-                    <h3>Professional</h3>
-                    <div class="pricing-price">$595</div>
-                    <p class="pricing-description">Enhanced features for growing businesses</p>
+                    <h3>Pro</h3>
+                    <div class="price">$495</div>
+                    <p class="description">Ideal for businesses looking to grow their online presence.</p>
+                    <p class="includes">Includes everything in Starter, plus:</p>
                     <ul class="pricing-features">
-                        <li>8-page professional website</li>
-                        <li>Advanced design customization</li>
-                        <li>Blog setup and training</li>
-                        <li>Advanced SEO optimization</li>
-                        <li>Google Analytics setup</li>
-                        <li>Social media integration</li>
-                        <li>60 days free revisions</li>
-                        <li><strong>No Lock-In Guarantee</strong></li>
+                        <li>Up to 10 pages</li>
+                        <li>Blog or news section setup</li>
+                        <li>Advanced SEO optimisation (keyword targeting, sitemap)</li>
+                        <li>Simple multilingual setup (up to 2 languages)</li>
+                        <li>30 days of free changes after delivery</li>
                     </ul>
-                    <a href="mailto:info@plundi.com?subject=Start%20my%20$595%20Professional%20website" class="pricing-cta">Get Started</a>
+                    <a href="mailto:info@plundi.com?subject=Start%20my%20$495%20Pro%20website" class="btn-pricing">Get Started</a>
                 </div>
-                
                 <div class="pricing-card">
                     <h3>Premium</h3>
-                    <div class="pricing-price">$995</div>
-                    <p class="pricing-description">Complete solution for established businesses</p>
+                    <div class="price">$795</div>
+                    <p class="description">Best for companies with large or multilingual sites.</p>
+                    <p class="includes">Includes everything in Pro, plus:</p>
                     <ul class="pricing-features">
-                        <li>12-page comprehensive website</li>
-                        <li>E-commerce functionality</li>
-                        <li>Customer portal setup</li>
-                        <li>Advanced integrations</li>
-                        <li>Priority support</li>
-                        <li>Performance optimization</li>
-                        <li>90 days free revisions</li>
-                        <li><strong>No Lock-In Guarantee</strong></li>
+                        <li>Unlimited pages</li>
+                        <li>Advanced multilingual setup (up to 5 languages)</li>
+                        <li>Custom features (price calculators, booking forms)</li>
+                        <li>Full copywriting service for all pages</li>
+                        <li>60 days of free changes after delivery</li>
                     </ul>
-                    <a href="mailto:info@plundi.com?subject=Start%20my%20$995%20Premium%20website" class="pricing-cta">Get Started</a>
+                    <a href="mailto:info@plundi.com?subject=Start%20my%20$795%20Premium%20website" class="btn-pricing">Get Started</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Additional Services -->
-    <section class="additional-services">
-        <div class="container">
-            <h2 class="section-title">Additional Services</h2>
-            <div class="additional-grid">
-                <div class="additional-card">
-                    <h3>SEO Audit & Optimization</h3>
-                    <div class="additional-price">$195</div>
-                    <p>Comprehensive SEO analysis and optimization to improve your search rankings.</p>
-                </div>
-                
-                <div class="additional-card">
-                    <h3>Logo Design</h3>
-                    <div class="additional-price">$295</div>
-                    <p>Professional logo design with multiple concepts and unlimited revisions.</p>
-                </div>
-                
-                <div class="additional-card">
-                    <h3>Content Writing</h3>
-                    <div class="additional-price">$150</div>
-                    <p>Professional copywriting for all your website pages and marketing materials.</p>
-                </div>
-                
-                <div class="additional-card">
-                    <h3>Social Media Setup</h3>
-                    <div class="additional-price">$125</div>
-                    <p>Complete social media profile setup and integration with your website.</p>
-                </div>
-                
-                <div class="additional-card">
-                    <h3>E-commerce Integration</h3>
-                    <div class="additional-price">$395</div>
-                    <p>Full online store setup with payment processing and inventory management.</p>
-                </div>
-                
-                <div class="additional-card">
-                    <h3>Website Maintenance</h3>
-                    <div class="additional-price">$95/month</div>
-                    <p>Monthly updates, security monitoring, and technical support for your website.</p>
+            
+            <!-- Add-Ons Section -->
+            <div class="addons-section" style="margin-top: 4rem;">
+                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Add-Ons</h3>
+                <div class="addons-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <div class="addon-card" style="background: white; padding: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--garnet-primary);">SEO Audit & Campaign</h4>
+                        <div class="addon-price" style="font-size: 1.5rem; font-weight: 600; color: var(--garnet-primary); margin-bottom: 1rem;">$295 one-time</div>
+                        <p style="color: var(--text-secondary);">Technical SEO analysis, keyword research, meta-data optimization, Google Analytics setup, and 30-day tracking</p>
+                    </div>
+                    <div class="addon-card" style="background: white; padding: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--garnet-primary);">Custom Price Calculator</h4>
+                        <div class="addon-price" style="font-size: 1.5rem; font-weight: 600; color: var(--garnet-primary); margin-bottom: 1rem;">from $145</div>
+                        <p style="color: var(--text-secondary);">Tailored calculators for pricing or quotes, mobile-friendly, with email/PDF result options</p>
+                    </div>
+                    <div class="addon-card" style="background: white; padding: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--garnet-primary);">Booking System</h4>
+                        <div class="addon-price" style="font-size: 1.5rem; font-weight: 600; color: var(--garnet-primary); margin-bottom: 1rem;">from $195</div>
+                        <p style="color: var(--text-secondary);">Online booking with calendar integration, automated confirmations and reminders</p>
+                    </div>
+                    <div class="addon-card" style="background: white; padding: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--garnet-primary);">Content Updates</h4>
+                        <div class="addon-price" style="font-size: 1.5rem; font-weight: 600; color: var(--garnet-primary); margin-bottom: 1rem;">$43/month</div>
+                        <p style="color: var(--text-secondary);">Up to 8 updates per month, new pages, modifications, delivered within 48 hours</p>
+                    </div>
+                    <div class="addon-card" style="background: white; padding: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--garnet-primary);">Hosting & Security</h4>
+                        <div class="addon-price" style="font-size: 1.5rem; font-weight: 600; color: var(--garnet-primary); margin-bottom: 1rem;">$21/month</div>
+                        <p style="color: var(--text-secondary);">99.99% uptime, CDN, firewalls, daily backups, 24/7 monitoring</p>
+                    </div>
+                    <div class="addon-card" style="background: white; padding: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--garnet-primary);">Live Chat Integration</h4>
+                        <div class="addon-price" style="font-size: 1.5rem; font-weight: 600; color: var(--garnet-primary); margin-bottom: 1rem;">$85</div>
+                        <p style="color: var(--text-secondary);">WhatsApp, Messenger or web chat with branded design and contact capture</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section id="faq" class="services">
         <div class="container">
             <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3 class="faq-question">What is the "No Lock-In Guarantee"?</h3>
-                    <p class="faq-answer">Your website is 100% yours to keep forever. We provide you with all source files, and you can move to any hosting provider at any time. No contracts, no recurring fees, no hidden dependencies.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>What is the "No Lock-In Guarantee"?</h3>
+                    <p>Your website is 100% yours to keep forever. We provide you with all source files, and you can move to any hosting provider at any time. No contracts, no recurring fees, no hidden dependencies.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Do I need to pay upfront?</h3>
-                    <p class="faq-answer">No prepayment required. You only pay after reviewing and approving your completed website. We believe in earning your trust through quality work, not contracts.</p>
+                <div class="service-card">
+                    <h3>Do I need to pay upfront?</h3>
+                    <p>No prepayment required. You only pay after reviewing and approving your completed website. We believe in earning your trust through quality work, not contracts.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">How long does it take?</h3>
-                    <p class="faq-answer">Most websites are completed within 3-7 business days. You'll receive regular updates throughout the process and can request changes during your free revision period.</p>
+                <div class="service-card">
+                    <h3>How long does it take?</h3>
+                    <p>Most websites are completed within 3-7 business days. You'll receive regular updates throughout the process and can request changes during your free revision period.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">What if I don't like the website?</h3>
-                    <p class="faq-answer">We include free revisions for 30-90 days (depending on package). If you're still not satisfied, you don't pay anything. Your satisfaction is our priority.</p>
+                <div class="service-card">
+                    <h3>What if I don't like the website?</h3>
+                    <p>We include free revisions for 30-90 days (depending on package). If you're still not satisfied, you don't pay anything. Your satisfaction is our priority.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I update content myself?</h3>
-                    <p class="faq-answer">Yes! We provide you with everything needed to update your website. Plus, we include basic training on how to make content changes yourself.</p>
+                <div class="service-card">
+                    <h3>Can I update content myself?</h3>
+                    <p>Yes! We provide you with everything needed to update your website. Plus, we include basic training on how to make content changes yourself.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Do you provide hosting?</h3>
-                    <p class="faq-answer">We can recommend reliable hosting providers, but you choose where to host. This ensures you maintain full control and ownership of your website and data.</p>
+                <div class="service-card">
+                    <h3>Do you provide hosting?</h3>
+                    <p>We can recommend reliable hosting providers, but you choose where to host. This ensures you maintain full control and ownership of your website and data.</p>
                 </div>
             </div>
         </div>
@@ -1064,41 +1225,31 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+            <h2 class="section-title">Ready to Get Started?</h2>
             <div class="contact-content">
-                <h2 class="section-title">Ready to Get Started?</h2>
-                
-                <form class="contact-form" action="contact.php" method="POST">
+                <form action="contact.php" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name *</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="email">Email Address *</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                    
                     <div class="form-group">
                         <label for="website">Current Website (if any)</label>
                         <input type="url" id="website" name="website">
                     </div>
-                    
                     <div class="form-group">
                         <label for="message">Tell us about your project *</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" required placeholder="What kind of business website do you need? Any specific requirements or features?"></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    <button type="submit" class="btn-pricing">Send Message</button>
                 </form>
-                
-                <div style="margin-top: 3rem; text-align: center;">
-                    <a href="mailto:info@plundi.com?subject=Get%20Started%20Today" class="btn-primary" style="display: inline-block; margin-top: 1rem;">Get Your Website - Starting $325</a>
-                </div>
             </div>
         </div>
     </section>
@@ -1107,27 +1258,96 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Plundi</div>
-                <p>Professional websites that drive business growth</p>
-                
-                <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
+                <div class="footer-section">
+                    <h3>Plundi</h3>
+                    <p>Professional business websites delivered in days, not weeks. We make web design simple and affordable for small businesses.</p>
+                    <p><strong>No Lock-In Guarantee:</strong> Your website is yours to keep forever. No contracts, no recurring fees.</p>
                 </div>
-                
-                <div class="footer-contact">
-                    <p>📧 info@plundi.com</p>
-                    <p>📞 +1 (555) 123-4567</p>
-                    <p>💬 WhatsApp: +1 (555) 123-4567</p>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:info@plundi.com">info@plundi.com</a></p>
+                    <p>Phone: <a href="tel:+1-855-PLUNDI-1">+1 (855) PLUNDI-1</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="#pricing">Website Design</a></p>
+                    <p><a href="#pricing">E-commerce Setup</a></p>
+                    <p><a href="#pricing">SEO Optimization</a></p>
+                    <p><a href="#pricing">Website Maintenance</a></p>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2025 Plundi. All rights reserved. | Operated by DAILY ENERGY OÜ</p>
+                <p>&copy; 2025 Plundi. All rights reserved. | Operated by DAILY ENERGY OÜ, Estonia</p>
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <a href="mailto:info@plundi.com?subject=Get Started Today">Get Your Website - Starting $325</a>
+    </div>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Hide mobile CTA on form section
+        window.addEventListener('scroll', function() {
+            const contactSection = document.getElementById('contact');
+            const mobileCTA = document.querySelector('.mobile-cta');
+            const contactRect = contactSection.getBoundingClientRect();
+            
+            if (contactRect.top <= window.innerHeight && contactRect.bottom >= 0) {
+                mobileCTA.style.display = 'none';
+            } else {
+                mobileCTA.style.display = 'block';
+            }
+        });
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Plundi",
+        "url": "https://plundi.com",
+        "logo": "https://plundi.com/logo.png",
+        "description": "Professional business websites delivered in days. Starting from $325 with no prepayment required.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-855-PLUNDI-1",
+            "contactType": "customer service",
+            "email": "info@plundi.com"
+        },
+        "sameAs": [
+            "https://facebook.com/plundi",
+            "https://linkedin.com/company/plundi"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "name": "Professional Website Design",
+            "description": "5-page professional business website with mobile-responsive design, SEO optimization, and 30 days free revisions",
+            "price": "325",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </body>
 </html>
