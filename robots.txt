@@ -1,34 +1,26 @@
 User-agent: *
 Allow: /
 
-# Disallow old language versions to prevent indexing
+# Block old language URLs from indexing
 Disallow: /nl/
 Disallow: /fr-fr/
 Disallow: /et/
 Disallow: /de/
 Disallow: /es/
-
-# Disallow old service pages
 Disallow: /services/
 Disallow: /about/
 Disallow: /home-2/
 Disallow: /diensten/
 
-# Disallow old accommodation/rental content
-Disallow: /accommodation/
-Disallow: /rental/
-Disallow: /property/
-Disallow: /short-term/
-Disallow: /str/
+# Allow important pages
+Allow: /pricing
+Allow: /portfolio
+Allow: /testimonials
+Allow: /knowledge-base
+Allow: /contact
 
-# Disallow WordPress admin areas
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /wordpress/
-
-# Disallow log files and sensitive areas
-Disallow: /contact_log.txt
-Disallow: /*.log$
-
-# Sitemap location
+# Sitemap
 Sitemap: https://plundi.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
